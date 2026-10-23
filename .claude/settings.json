@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/a.dhuraivanrajasekar/OneDrive - Accenture/Learning/SauceDemo/**)",
+      "Bash(ls tests *)",
+      "Bash(cat tests/auth.setup.ts)",
+      "Bash(head -12 tests/login.spec.ts)",
+      "Bash(sed -n '/projects:/,/^  \\\\],/p' playwright.config.ts)",
+      "Bash(grep -nE \"get |\\\\\\(.*\\\\\\).*Locator|async \" pages/CartPage.ts)",
+      "Bash(cat tests/cart.spec.ts)"
+    ]
+  }
+}

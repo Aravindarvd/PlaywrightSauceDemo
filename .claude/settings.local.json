@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(npm test -- --grep \"@smoke\" --reporter=list)",
+      "PowerShell(Get-Content playwright.config.ts | Select-Object -Index \\(25..42\\); Get-Content package.json | Select-String '\"test|\"report')",
+      "Read(//c/Users/a.dhuraivanrajasekar/OneDrive - Accenture/Learning/SauceDemo/**)",
+      "Bash(node -e \"const d=require\\('dotenv'\\);console.log\\(JSON.stringify\\(d.parse\\(require\\('fs'\\).readFileSync\\('.env'\\)\\)\\)\\)\")",
+      "Bash(BASE_URL= npx playwright test --grep @smoke --reporter=line)",
+      "Bash(cd \"/c/Users/a.dhuraivanrajasekar/OneDrive - Accenture/Learning/SauceDemo\" && npm run test:smoke -- --reporter=line 2>&1 | grep -E \"passed|failed|Error\" | head -3)",
+      "PowerShell(Get-ChildItem pages -Force | Select-Object Name; foreach \\($f in Get-ChildItem pages -File\\) { \"== $\\($f.Name\\)\"; Get-Content $f.FullName }; \"== config use\"; Select-String -Path playwright.config.ts -Pattern 'testIdAttribute')",
+      "Bash(npx playwright *)",
+      "Bash(cd \"/c/Users/a.dhuraivanrajasekar/OneDrive - Accenture/Learning/SauceDemo\" && npx playwright test --reporter=list 2>&1 | grep -E \"ok |x |passed|failed|Error|Expected|Received\" | head -20)",
+      "Bash(cd \"/c/Users/a.dhuraivanrajasekar/OneDrive - Accenture/Learning/SauceDemo\" && npx playwright test --reporter=list 2>&1 | grep -E \"ok |x |passed|failed\" | head -10)",
+      "Bash(cd \"/c/Users/a.dhuraivanrajasekar/OneDrive - Accenture/Learning/SauceDemo\" && npx playwright test --reporter=list 2>&1 | grep -E \"ok |x |passed|failed|Error\" | head -10)"
+    ]
+  }
+}
