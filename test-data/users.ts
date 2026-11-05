@@ -11,6 +11,7 @@ export const user = {
     standard: {username: 'standard_user', password},
     lockedOutUser: {username: 'locked_out_user', password},
     invalidPassword: {username: 'standard_user', password: 'sauce'},
-    missingUsername: {username: '',password}
+    missingUsername: {username: '',password},
+    performanceGlitchUser: {username: 'performance_glitch_user', password}
 } satisfies Record<string, User>;
 

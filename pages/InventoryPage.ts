@@ -22,4 +22,10 @@ export class InventoryPage extends BasePage {
                         .getByRole("button", {name: "Add to cart"})
                         .click();
     }
+
+    async removeFromCart(productName: string): Promise<void> {
+        await this.items.filter({hasText: productName})
+                        .getByRole("button", {name: "Remove"})
+                        .click();
+    }
 }
